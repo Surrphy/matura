@@ -74,6 +74,32 @@ mod matura_2020_1 {
 
         assert!(similar_arrays.is_k());
     }
+
+    #[test]
+    fn returns_false_1_1_3 () {
+        let n = 5;
+        let k = 3;
+        let a: [usize; 5] = [10, 9, 12, 10, 9];
+        let b: [usize; 5] = [10, 10, 9, 9, 12];
+
+        let similar_arrays = SimilarArrays::new(n, &a, &b, k);
+
+        assert!(!similar_arrays.is_k());
+    }
+
+    #[test]
+    fn returns_false_2_1_3 () {
+        let n = 5;
+        let k = 4;
+        let a: [usize; 5] = [3, 6, 5, 1, 8];
+        let b: [usize; 5] = [5, 1, 8, 2, 6];
+
+        let similar_arrays = SimilarArrays::new(n, &a, &b, k);
+
+        assert!(!similar_arrays.is_k());
+    }
+
+
 }
 
 pub struct SimilarArrays<'a> {
