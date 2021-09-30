@@ -1,2 +1,8 @@
 rust/target
 rust/Cargo.lock
+
+# cpp compiled files
+*.out
+
+# vscode files
+.vscode
