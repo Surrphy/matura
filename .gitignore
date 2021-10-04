@@ -1,5 +1,7 @@
-rust/target
-rust/Cargo.lock
+# Rust binaries and cargo lock
+target
+Cargo.lock
+
 */node_modules
 
 # cpp compiled files
